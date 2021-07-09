@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Welcome Facebook Home </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<style type='text/css'>	 
+	div{border:2px solid red; min-height:100px; }
+	.wrapper{
+		 
+	}
+	#menu{
+		height:50px; background-color:yellow;
+	}
+	#banner{
+		height:300px;
+		background-image:url('images/banner.jpg');
+	}
+	#overlay{
+	height:300px;
+		background-color:rgba(0,0,0,0.5);
+		}
+	#parent{
+		display:flex;
+	}
+	.box{
+		width:33%;height:200px
+	}
+	@media screen and (max-width:480px){
+		#parent{
+			flex-direction:column;
+		}
+		.box{
+			width:100%;
+		}
+	}
+	</style>
+	</head>
+	<body>
+	 <div class='wrapper'>
+		 <div id='menu'>MenuBar</div>
+		 <div id='banner'>
+			<div id='overlay'></div>
+		 </div>
+		 <div id='parent'>
+			<div class='box'>
+			<p>This is a test content,and a change made is here</p>
+			</div>
+			<div class='box'></div>
+			<div class='box'></div>
+		 </div>
+	 </div>
+</body>
+</html>
